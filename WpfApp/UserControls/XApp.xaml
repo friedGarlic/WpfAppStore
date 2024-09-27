@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="WpfApp.UserControls.XApp"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp.UserControls"
+             mc:Ignorable="d" 
+             Height="350" Width="250">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.6*"></RowDefinition>
+            <RowDefinition Height="0.4*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Image Grid.Row="0" Name="ProductImage" MouseUp="ProductImage_MouseUp"></Image>
+        
+        <Grid Name="ButtomGrid" Grid.Row="1" Grid.Column="1" Background="DarkGray" MouseUp="ProductImage_MouseUp">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.7*"></RowDefinition>
+                <RowDefinition Height="0.25*"></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Name="AppNameText" Grid.Row="0" Grid.Column="0" VerticalAlignment="Top" 
+                   FontSize="35" Foreground="White" Text="Zoom Rooms" TextWrapping="Wrap" Margin="2"></TextBlock>
+
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Free" FontSize="20" Margin="5"></TextBlock>
+        </Grid>
+    </Grid>
+</UserControl>
