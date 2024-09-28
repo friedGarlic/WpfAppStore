@@ -28,8 +28,6 @@ namespace WpfApp.UserControls
                 ToTitleCase(
                     randomFileInfo.FullName.Split('\\').Last().Split('-').Last().Split('.').First()
                 );
-
-            
         }
 
         private void ProductImage_MouseUp(object sender, MouseButtonEventArgs e)

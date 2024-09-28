@@ -58,6 +58,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="UserControls\AppsViewer.xaml.cs">
+      <DependentUpon>AppsViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HighlightApps.xaml.cs">
+      <DependentUpon>HighlightApps.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\XApp.xaml.cs">
       <DependentUpon>XApp.xaml</DependentUpon>
     </Compile>
@@ -73,6 +79,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UserControls\AppsViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\HighlightApps.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControls\XApp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
